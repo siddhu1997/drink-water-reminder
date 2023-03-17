@@ -1,0 +1,7 @@
+{
+    "PORT": 3000,
+    "MONGO": {
+        "URI": "mongodb://localhost:27017/",
+        "DB": "dwr-local"
+    }
+}
