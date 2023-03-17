@@ -1,0 +1,47 @@
+{
+  "name": "dwr-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhu1997/drink-water-reminder.git"
+  },
+  "author": "Siddharth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhu1997/drink-water-reminder/issues"
+  },
+  "homepage": "https://github.com/siddhu1997/drink-water-reminder#readme",
+  "volta": {
+    "node": "18.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "2.8.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.--write": "prettier --write"
+  },
+  "dependencies": {
+    "axios": "^1.3.4",
+    "dayjs": "^1.11.7",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.15.0",
+    "i18n": "^0.15.1",
+    "lodash": "^4.17.21"
+  }
+}
