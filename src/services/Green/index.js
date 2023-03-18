@@ -27,7 +27,6 @@ class WhatsappService {
             throw new Error("Express app missing!");
         }
         this.webhookAPI = client.webhookAPI(app, config.get("GREEN_WEBHOOK_PATH"));
-        this.webhookAPI.onIncomingMessageText(((data) => DPI.get("WhatsappWebhookManager").processIncomingMessageText(data)));
     }
 
     getWebhookAPIClient() {

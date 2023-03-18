@@ -1,6 +1,6 @@
 /* eslint-disable */
 const DPI = require('@DPI');
-const list = ["Secrets"];
+const list = ["Constants","Secrets"];
 
 try {
     let Util;
