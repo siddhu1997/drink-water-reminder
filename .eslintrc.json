@@ -11,7 +11,11 @@
         "sourceType": "module"
     },
     "rules": {
-        "class-methods-use-this": "off"
+        "class-methods-use-this": "off",
+        "import/no-unresolved": "off",
+        "global-require": "off",
+        "import/no-dynamic-require": "off",
+        "no-console": "off"
     },
     "ignorePatterns": ["taskdef.json", "test/**"]
 }

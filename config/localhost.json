@@ -3,5 +3,8 @@
     "MONGO": {
         "URI": "mongodb://localhost:27017/",
         "DB": "dwr-local"
-    }
+    },
+    "BASE_URL": " https://siddhu-be.in.ngrok.io",
+    "GREEN_ID_INSTANCE": "1101801168",
+    "GREEN_API_TOKEN_INSTANCE": ""
 }
