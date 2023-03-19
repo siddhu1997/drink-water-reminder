@@ -11,11 +11,12 @@ class WhatsappWebhookManager extends BaseManager {
             const { messageData, senderData } = data;
             const message = messageData.textMessageData.textMessage;
             if (message) {
-                this.restAPI.message.sendTemplateButtons(senderData.sender, `From Bot:\n\n${message}`,"Give rating?", [
+                const result = await this.restAPI.message.sendTemplateButtons(senderData.sender, `From Bot:\n\n${message}`,"Give rating?", [
                     {index: 0, quickReplyButton: {displayText: "1", "id": "1"}},
                     {index: 1, quickReplyButton: {displayText: "2", "id": "2"}},
                     {index: 2, quickReplyButton: {displayText: "3", "id": "3"}}
-                ])
+                ]);
+                console.log('Template Result:', result);
                 // this.restAPI.message.sendMessage(senderData.sender, null, `Echo:\n\n${message}`);
             }
             return true;
